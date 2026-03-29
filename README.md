@@ -1,5 +1,7 @@
 # 🤖 AI-Skills - Enhance Your AI Experience Effortlessly
 
+[![SafeSkill 89/100](https://img.shields.io/badge/SafeSkill-89%2F100_Passes%20with%20Notes-yellow)](https://safeskill.dev/scan/khaier720-ai-skills)
+
 ## 🚀 Getting Started
 Welcome to AI-Skills! This application offers modular skills that enhance AI capabilities. You can optimize your workflows with specialized knowledge and tool integrations. Perfect for users looking to extend their AI interactions with ease.
 
